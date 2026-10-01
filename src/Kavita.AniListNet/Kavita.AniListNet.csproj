@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <LangVersion>latest</LangVersion>
@@ -13,6 +13,7 @@
         <Authors>Dennise Catolos,Kavita</Authors>
         <Description>A simple .NET API wrapper for AniList!</Description>
         <PackageProjectUrl>https://github.com/Kareadita/anilistnet/</PackageProjectUrl>
+        <Version>0.1.4</Version>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -25,15 +26,7 @@
         <MinVerDefaultPreReleaseIdentifiers>preview</MinVerDefaultPreReleaseIdentifiers>
     </PropertyGroup>
 
-    <PropertyGroup>
-        <MinVerTagPrefix>v</MinVerTagPrefix>
-    </PropertyGroup>
-
     <ItemGroup>
-        <PackageReference Include="MinVer" Version="7.0.0">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../GitHubActions/Kavita.ReleaseTools.schema.json
+
+CsprojPath: "src/Kavita.AniListNet/Kavita.AniListNet.csproj"
+VersionXmlElement: "Version"
+
+# Always be Stable release
+ParseReleaseTypes:
+  BranchRequirements:
+    Stable:
+      DoesNotContain: [ ]
+      StartWiths: ""
+
+VersionBump:
+  Disabled: false
+  ComponentToBump: Build
+
+FlushGitChanges:
+  Files:
+    - "src/Kavita.AniListNet/Kavita.AniListNet.csproj"
+
+BuildLibrary:
+  CsprojPath: "src/Kavita.AniListNet/Kavita.AniListNet.csproj"
+  OutputDirectory: "output"
+
+PublishToNuGet:
+  OutputDirectory: "output"
